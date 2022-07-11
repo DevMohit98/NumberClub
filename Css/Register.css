@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.RegisterBg {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    60deg,
+    rgba(252, 241, 213, 1) 0%,
+    rgba(255, 194, 175, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Register {
+  width: 70vw;
+  height: auto;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+.register-title {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #bf68e6;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.register-lg-form .form-label,
+.resgiter-form-sm .form-label,
+.register-form .form-control .register-form .form-select,
+.register-form-sm .form-control .register-form-sm .form-select {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.register-lg-form .form-control:focus,
+.register-form .form-select:focus,
+.register-form-sm .form-control:focus,
+.register-form-sm .form-select:focus {
+  border: 2px solid #bf68e6 !important;
+  box-shadow: none !important;
+}
+.register-lg-form .btn-primary,
+.register-form-sm .btn-primary {
+  width: auto;
+  background-color: #bf68e6 !important;
+  border-color: #bf68e6 !important;
+  margin-left: 5px;
+}
+.register-lg-form .btn,
+.register-form-sm .btn {
+  color: #fafafa;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.register-lg-form .btn-primary:focus,
+.register-form-sm .btn-primary:focus {
+  box-shadow: none !important;
+  background-color: #bf68e6 !important;
+}
+@media screen and (min-width: 576px) and (max-width: 786px) {
+  .Register {
+    width: auto;
+    height: auto;
+  }
+  .register-title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .RegisterBg {
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .Register {
+    width: auto;
+    height: auto;
+  }
+  .register-title {
+    font-size: 1rem;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+  }
+}

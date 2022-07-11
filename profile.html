@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="./Assets/logo.png" />
+    <link rel="stylesheet" type="text/css" href="./Css/index3.css" />
+    <link rel="stylesheet" type="text/css" href="./Css/cart.css" />
+    <link rel="stylesheet" type="text/css" href="Css/Checkout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./Css/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <title>VIP Mobile Number | Fancy</title>
+  </head>
+  <body>
+    <!--Desktop screen start-->
+    <div class="d-none d-lg-block">
+      <!--navbar start-->
+      <div id="nav-placeholder"></div>
+      <div class="container mt-3">
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="col-md-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="col-md-4">
+            <label for="pass" class="form-label"> New password</label>
+            <input type="password" class="form-control" id="pass" />
+          </div>
+
+          <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder=""
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phone" readonly />
+          </div>
+          <div class="col-md-4">
+            <label for="state" class="form-label">State</label>
+            <input type="text" class="form-control" id="state" />
+          </div>
+          <div class="col-md-2">
+            <label for="pincode" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="pincode" />
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary save">Save</button>
+          </div>
+        </form>
+      </div>
+
+      <script>
+        $(document).ready(function () {
+          $("#nav-placeholder").load("./Template/Navbar.html");
+        });
+      </script>
+      <!--navbar end-->
+
+      <!--footer start-->
+      <div
+        id="foot-placeholder"
+        style="position: fixed; bottom: 0; width: 100vw"
+        id="mobFoot-placeholder"
+      ></div>
+      <script>
+        $(document).ready(function () {
+          $("#foot-placeholder").load("./Template/Footer.html");
+        });
+      </script>
+      <!--footer end-->
+    </div>
+    <!--Desktop screen end-->
+    <!--Mobile screen start-->
+    <div class="d-block d-lg-none">
+      <!--Navbar start-->
+      <div id="mobNav-placeholder"></div>
+      <div class="container mt-3">
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="nameMob" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nameMob" />
+          </div>
+          <div class="col-md-4">
+            <label for="emailMob" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailMob" />
+          </div>
+          <div class="col-md-4">
+            <label for="passMob" class="form-label"> New password</label>
+            <input type="password" class="form-control" id="passMob" />
+          </div>
+
+          <div class="col-md-5">
+            <label for="phoneMob" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phoneMob" readonly />
+          </div>
+          <div class="col-12">
+            <label for="addressMob" class="form-label">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="addressMob"
+              placeholder=""
+            />
+          </div>
+
+          <div class="col-md-4">
+            <label for="stateMob" class="form-label">State</label>
+            <input type="text" class="form-control" id="stateMob" />
+          </div>
+          <div class="col-md-2">
+            <label for="pincodeMob" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="pincodeMob" />
+          </div>
+
+          <div class="col-12 text-center mb-5">
+            <button type="submit" class="btn btn-primary saveMob">Save</button>
+          </div>
+        </form>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $("#mobNav-placeholder").load("./Template/MobileNav.html");
+        });
+      </script>
+      <!--Navbar end-->
+      <div id="mobFoot-placeholder"></div>
+      <script>
+        $(document).ready(function () {
+          $("#mobFoot-placeholder").load("./Template/mobileFooter.html");
+        });
+      </script>
+    </div>
+
+    <!--Mobile scrren end-->
+
+    <!---scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./Js/cart.js" type="module"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+    <!--script for cart desktop-->
+    <script>
+      let customer_no;
+      let ifMob = screen.width > 700 ? "" : "Mob";
+
+      var myHeaders = new Headers();
+      myHeaders.append("token", localStorage.getItem("user"));
+
+      var requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        redirect: "follow",
+      };
+
+      function getUserInfo() {
+        fetch(
+          "https://vipnumberapi.bigboychoice.com/api/v1/customer/customer_info",
+          requestOptions
+        )
+          .then((response) => response.json())
+          .then((result) => {
+            if (result.status == "success") {
+              document.getElementById("name" + ifMob).value =
+                result.data.customer_name;
+              document.getElementById("email" + ifMob).value =
+                result.data.email;
+              document.getElementById("address" + ifMob).value =
+                result.data.address;
+              document.getElementById("state" + ifMob).value =
+                result.data.state;
+              document.getElementById("pincode" + ifMob).value =
+                result.data.pincode;
+              document.getElementById("phone" + ifMob).value =
+                result.data.customer_no;
+              customer_no = result.data.customer_no;
+            } else {
+              localStorage.removeItem("user");
+              window.location = "sign.html";
+            }
+          })
+          .catch((error) => console.log("error", error));
+      }
+      getUserInfo();
+
+      $(".save" + ifMob).click((e) => {
+        e.preventDefault();
+        if (
+          $("#name" + ifMob).val().length > 0 &&
+          $("#email" + ifMob).val().length > 0 &&
+          $("#address" + ifMob).val().length > 0 &&
+          $("#state" + ifMob).val().length > 0 &&
+          $("#pincode" + ifMob).val().length > 0
+        ) {
+          var myHeaders = new Headers();
+          myHeaders.append("Content-Type", "application/json");
+          var raw;
+          if ($("#pass" + ifMob).val().length > 0) {
+            raw = JSON.stringify({
+              customer_name: $("#name" + ifMob).val(),
+              email: $("#email" + ifMob).val(),
+              password: $("#pass" + ifMob).val(),
+              state: $("#state" + ifMob).val(),
+              pincode: $("#pincode" + ifMob).val(),
+              address: $("#address" + ifMob).val(),
+            });
+          } else {
+            raw = JSON.stringify({
+              customer_name: $("#name" + ifMob).val(),
+              email: $("#email" + ifMob).val(),
+              state: $("#state" + ifMob).val(),
+              pincode: $("#pincode" + ifMob).val(),
+              address: $("#address" + ifMob).val(),
+            });
+          }
+
+          var requestOptions = {
+            method: "POST",
+            headers: myHeaders,
+            body: raw,
+            redirect: "follow",
+          };
+
+          fetch(
+            "https://vipnumberapi.bigboychoice.com/api/v1/customer/update_customer/" +
+              customer_no,
+            requestOptions
+          )
+            .then((response) => response.json())
+            .then((result) => {
+              if (result.status == "success") {
+                Toastify({
+                  text: "Profile updated successfully!",
+                  duration: 3000,
+                  newWindow: true,
+                  close: true,
+                  gravity: "top", // `top` or `bottom`
+                  position: "right", // `left`, `center` or `right`
+                  stopOnFocus: true, // Prevents dismissing of toast on hover
+                  style: {
+                    background: "#32cd32",
+                  },
+                }).showToast();
+              }
+            })
+            .catch((error) => console.log("error", error));
+        }
+      });
+    </script>
+  </body>
+</html>

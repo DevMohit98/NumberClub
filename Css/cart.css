@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Fonts/Montserrat-Regular_d60d904c27aa445d89a0a8e18a1f3fed.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+   overflow-x: hidden;
+   font-family:'Roboto',sans-serif;
+  }
+
+
+  a{
+    text-decoration: none !important;
+    color: black ;
+}
+
+.cart-heading{
+    font-family: Montserrat;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.card-desc{
+    font-family:'Roboto',sans-serif;
+}
+
+.cart-details-cont{
+    box-shadow: 0 0 3px #d1d7dc;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 18px;
+    text-align: center;
+   box-shadow:  6px 6px 25px #c3c3c3,
+             -6px -6px 25px #fdfdfd;
+}
+
+.cart-details-cont figure{
+    width: 25rem;
+}
+.cart-details-cont p{
+    font-size: 1.1rem;
+    font-family: 'Roboto';
+}
+.cart-details-cont a{
+    background-color: #30c5d3;
+    color: whitesmoke !important;
+    padding:0.4rem 0.8rem;
+    border-radius: 20px;
+    border:none;
+}
